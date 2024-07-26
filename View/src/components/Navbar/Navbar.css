@@ -1,0 +1,26 @@
+
+.container{
+
+    background-color: rgb(20, 143, 147);
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1px 3px;
+    
+    
+    
+}
+
+
+.link{
+
+    text-decoration: none;
+    color:black;
+    size: 300px;
+    border: none;
+    padding: 4px;
+    background:transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
