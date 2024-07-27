@@ -4,6 +4,7 @@ import ImageUpload from './components/ImageUpload/ImageUpload';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import AddStudentPage from './Page/addStudentPage';
+import Card from "./components/Card/Card"
 
 function App() {
     const [currentPage, setCurrentPage] = useState('home');
@@ -17,6 +18,9 @@ function App() {
              
             case 'image':
                 return <ImageUpload/>
+            case 'card':
+                return <Card/>
+
 
             default:
                 return <Home />;
@@ -24,7 +28,7 @@ function App() {
     };
 
     return (
-        <div>
+        <div className='App'>
             <Navbar setCurrentPage={setCurrentPage} />
             {renderPage()}
         </div>

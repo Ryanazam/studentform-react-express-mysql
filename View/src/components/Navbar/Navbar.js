@@ -7,6 +7,7 @@ const Navbar = ({ setCurrentPage }) => {
       <div><button onClick={() => setCurrentPage('home')} className='link'>Home</button></div>
       <div><button onClick={() => setCurrentPage('students')} className='link'> Add Student</button></div>
       <div><button onClick={() => setCurrentPage('image')} className='link'>Image Upload</button></div>
+      <div><button onClick={() => setCurrentPage('card')} className='link'>Card</button></div>
     </div>
   ); 
 }
